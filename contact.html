@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding:0;
+   box-sizing:border-box;
+}
+hr{
+    width:100;
+    text-align: start;
+}
+div h6,
+div h3{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+html,body{
+    line-height:1.4;
+    font-weight:300;
+    font-family: "Roboto", sans-serif;
+    color:aliceblue;
+    min-height:100vh;
+    background-position: center;
+    background-size: cover;
+    background-image:url(images/bg_image.webp) ;
+}
+body{
+     background-color: rgb(35, 20, 58);
+}
+nav{
+    height: 70px;
+    background: #063247;
+    box-shadow:0 3px 15px rgba(0,0,0,.4);
+}
+nav ul{
+    float:right;
+    margin-right:30px;
+}
+nav ul ul{
+    position: absolute;
+    top:85px;
+    border-top: 3px solid#23dbdb;
+    opacity: 0;
+    visibility: hidden;
+}
+nav ul li{
+    display:inline-block;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    color:#23dbdb;
+}
+nav ul li:hover>ul{
+    top:70px;
+    opacity:1;
+    visibility:visible;
+    transition: .3s linear;
+}
+nav ul li a{
+    color:white;
+    display:block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: #063247;
+    transition: .5s;
+}
+nav ul ul li {
+    width:180px;
+    display: list-item;
+    position: relative;
+    border: 1px solid#042331;
+    border-top: none;
+
+}
+nav ul ul ul{
+    border-top: none;
+}
+nav ul ul ul li{
+    position: relative;
+    top:-70px;
+    left:150px;
+}
+nav ul ul li a{
+    line-height:50px;
+    /* font-size: 20px;; */
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#">Work</a>
+            <ul>
+                <li>
+                    <a href="webd.html">App Development</a>
+                    <ul>
+                        <li><a href="mwebd.html">more</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="webd.html">Web Development</a>
+                    <ul>
+                        <li><a href="mwebd.html">more</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="webd.html">UI UX Designer</a>
+                    <ul>
+                        <li><a href="mwebd.html">more</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h3 class="h3-responsive">Get in touch with us</h3>
+        <hr>
+        <h6 class="h6-responsive"><span><i class="envelope" aria-hidden="true"></i></span>abcd1234@gmail.com</h6>
+        <h6 class="h6-responsive"><span><i class="envelope" aria-hidden="true"></i></span>wxyz1234@gmail.com</h6>
+        <h6 class="h6-responsive"><span><i class="phone" aria-hidden="true"></i></span>phone:1234567891</h6>
+        <h6 class="h6-responsive"><span><i class="phone" aria-hidden="true"></i></span>phone:5478123654</h6>
+        <h6 class="h6-responsive"><span><i class="phone" aria-hidden="true"></i></span>phone:1254885635</h6>
+
+    </div>
+</body>
+</html>
